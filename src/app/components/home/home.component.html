@@ -1,0 +1,21 @@
+<nav class="navbar navbar-light bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light">Mini eCommerse</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" routerLink="/products">Products</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-sm btn-outline-light" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+
+    <h3>{{userData.name}}</h3>
+    <p>{{userData.email}}</p>
+    <img src="{{userData.picture}}" alt="">
+
+  </div>
